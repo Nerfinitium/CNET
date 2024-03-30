@@ -1,0 +1,4 @@
+# ninja log v5
+4	1688	7214159727656338	CMakeFiles/Nexus.dir/main.c.obj	af07a3f195c7c280
+1	216	7214381229874095	CMakeFiles/Nexus.dir/src/cman.c.obj	9cee0712cff2a5fd
+1	209	7216128549851563	build.ninja	8090035c45120674
