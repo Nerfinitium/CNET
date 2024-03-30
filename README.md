@@ -1,8 +1,8 @@
-# Nexus
+# CNET
 
- ![](https://img.shields.io/badge/Cyber%20Security-Larp%20%2F%20Botnet%20%2F%20OFFENSIVE%20%2F%20Attack%20%2F%20Developer-red)
+ ![](https://img.shields.io/badge/Cyber%20Security%20%2F%20TELNET%20%2F%20PROJECT%20%2F%20Project%20%2F%20Developer-red)
 
-### How to compile for the server c&c code
+### How to compile for the server code
 
 
 1.For linux 
