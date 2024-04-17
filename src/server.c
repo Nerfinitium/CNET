@@ -134,14 +134,14 @@ void handleClient(int serverSocket, int clientSocket) {
     }
 
     if (strcmp(buffer, "admin") != 0) {
-        const char* errorMsg = "Invalid username Please try again.\r\n";
+        const char* errorMsg = "Invalid username Please try again\r\n";
         send(clientSocket, errorMsg, strlen(errorMsg), 0);
         close(clientSocket);
         return;
     }
 
     // Send the acknowledgment for the username
-    const char* usernameAckMsg = "Username received Please enter your password.\r\n";
+    const char* usernameAckMsg = "Username received Please enter your password\r\n";
     send(clientSocket, usernameAckMsg, strlen(usernameAckMsg), 0);
 
     const char* passwordPrompt = "password: ";
@@ -161,7 +161,7 @@ void handleClient(int serverSocket, int clientSocket) {
     printf("Received password: %s\n", password);
 
     if (isValidUser("admin", password, users, MAX_USERS)) {
-        const char* successMsg = "Login successful. Welcome!\r\n";
+        const char* successMsg = "Login successful\r\n";
         send(clientSocket, successMsg, strlen(successMsg), 0);
         const char* banner =
             "     --*Welcome To Telnet*-- ";
@@ -175,7 +175,7 @@ void handleClient(int serverSocket, int clientSocket) {
             executeCommand(clientSocket, buffer);
         }
     } else {
-        const char* errorMsg = "Invalid password. Please try again.\r\n";
+        const char* errorMsg = "Invalid password\r\n";
         send(clientSocket, errorMsg, strlen(errorMsg), 0);
     }
     close(clientSocket);
